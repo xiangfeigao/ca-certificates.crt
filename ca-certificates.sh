@@ -32,9 +32,9 @@ else
 fi
 
 echo -e "${INFO} Doanload ca-certificates.crt ..."
-${DOWNLOADER} https://raw.githubusercontent.com/P3TERX/ca-certificates.crt/download/ca-certificates.crt ||
-    ${DOWNLOADER} https://cdn.jsdelivr.net/gh/P3TERX/ca-certificates.crt@download/ca-certificates.crt ||
-    ${DOWNLOADER} https://gh.p3terx.workers.dev/ca-certificates.crt/download/ca-certificates.crt
+${DOWNLOADER} https://raw.githubusercontent.com/xiangfeigao/ca-certificates.crt/download/ca-certificates.crt ||
+#${DOWNLOADER} https://cdn.jsdelivr.net/gh/xiangfeigao/ca-certificates.crt@download/ca-certificates.crt ||
+#${DOWNLOADER} https://gh.p3terx.workers.dev/ca-certificates.crt/download/ca-certificates.crt
 
 [ -s ca-certificates.crt ] && echo -e "${INFO} ca-certificates.crt Download completed !" || {
     echo -e "${ERROR} Unable to download ca-certificates.crt, network failure or API error."
